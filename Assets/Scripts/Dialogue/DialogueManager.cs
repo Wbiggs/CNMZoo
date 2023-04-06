@@ -8,6 +8,8 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance {get; private set; }
 
+    [SerializeField] private TMP_Text dialogueText;
+
     private void Awake() 
     {
         if(instance != null && instance != this)
@@ -18,5 +20,10 @@ public class DialogueManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    public void DisplayNextLine()
+    {
+        //Todo
     }
 }
