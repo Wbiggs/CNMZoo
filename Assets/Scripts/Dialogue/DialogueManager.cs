@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DualogueManager instance {get; private set; }
+    public static DialogueManager instance {get; private set; }
 
     private void Awake() 
     {
