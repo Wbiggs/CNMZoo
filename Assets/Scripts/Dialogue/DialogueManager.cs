@@ -4,9 +4,9 @@ using UnityEngine;
 
 using TMPro;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueUIManager : MonoBehaviour
 {
-    public static DialogueManager instance {get; private set; }
+    public static DialogueUIManager instance {get; private set; }
 
     [SerializeField] private TMP_Text dialogueText;
 
