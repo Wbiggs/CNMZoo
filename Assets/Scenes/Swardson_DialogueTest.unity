@@ -586,29 +586,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebc621a3d0454c8fa6112e5a496e3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes:
-  - endAction: 1
-    text: What is your favorite food?
-    choices:
-    - text: Burger
-      linkedNodeID: 1
-    - text: Sandwich
-      linkedNodeID: 2
-    - text: Beans
-      linkedNodeID: 3
-    events: []
-  - endAction: 2
-    text: Nice, I like Burgers too!
-    choices: []
-    events: []
-  - endAction: 2
-    text: Sandwiches are okay...
-    choices: []
-    events: []
-  - endAction: 2
-    text: BEANS!!!!!
-    choices: []
-    events: []
+  branches:
+  - leaves:
+    - endAction: 1
+      text: What is your favorite food?
+      choices:
+      - text: Burger
+        branchID: 1
+      - text: French Fry
+        branchID: 2
+      - text: Cheese
+        branchID: 3
+      events: []
+  - leaves:
+    - endAction: 0
+      text: Oh!
+      choices: []
+      events: []
+    - endAction: 2
+      text: I like them too!
+      choices: []
+      events: []
+  - leaves:
+    - endAction: 2
+      text: Nice, always eat them first!
+      choices: []
+      events: []
+  - leaves:
+    - endAction: 0
+      text: Cheese!?
+      choices: []
+      events: []
+    - endAction: 1
+      text: You eat it with something else right?
+      choices:
+      - text: yes
+        branchID: 4
+      - text: no
+        branchID: 5
+      events: []
+  - leaves:
+    - endAction: 2
+      text: Oh good...
+      choices: []
+      events: []
+  - leaves:
+    - endAction: 2
+      text: Oh, that kinda weird.
+      choices: []
+      events: []
 --- !u!1 &2034722590
 GameObject:
   m_ObjectHideFlags: 0

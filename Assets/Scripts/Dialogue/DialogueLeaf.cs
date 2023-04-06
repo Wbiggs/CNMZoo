@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class DialogueNode : IDialogueNode
+public class DialogueLeaf : IDialogueNode
 {
     enum EndAction : ushort
     {
