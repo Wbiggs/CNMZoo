@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DialogueTree : MonoBehaviour
 {
+    [SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
+
+    public DialogueNode currentNode {get; set;}
+
     // Start is called before the first frame update
     void Start()
     {

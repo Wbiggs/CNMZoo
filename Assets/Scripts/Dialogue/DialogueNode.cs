@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueNode : IDialogueNode
 {
-    enum EndAction : int
+    enum EndAction : ushort
     {
         NextNode = 0,
         Choice = 1,
@@ -14,11 +14,26 @@ public class DialogueNode : IDialogueNode
     }
     [SerializeField] private EndAction endAction = EndAction.NextNode;
 
-    [SerializeField] private string text;
+    [TextArea(3, 4)] public string text;
+
+    public List<DialogueChoice> choices = new List<DialogueChoice>();
+    public List<DialogueEvent> events = new List<DialogueEvent>();
 
     public string Execute()
     {
-        
+        if(endAction == EndAction.NextNode)
+        {
+            //ToDo
+        }
+        else if(endAction == EndAction.Choice)
+        {
+            //ToDo
+        }
+        else if (endAction == EndAction.End)
+        {
+            //ToDo
+        }
+
         return "Success";
     }
 }
