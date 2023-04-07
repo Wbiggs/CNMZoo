@@ -6,37 +6,59 @@ using TMPro;
 
 public class DialogueUIManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private GameObject dialogueGroup;
+    [SerializeField] private GameObject nextButton;
     [SerializeField] private GameObject choiceButton;
+    
+    [SerializeField] private TMP_Text dialogueText;
+    
+    [SerializeField] private Transform buttonGroup;
 
     public DialogueReader currentReader {get; set;}
     public DialogueLeaf currentLeaf {get; set;}
 
-    private List<DialogueChoice> currentLeafCoices = new List<DialogueChoice>();
+    private List<GameObject> buttons = new List<GameObject>();
 
     private void Start()
     {
         Messenger<int>.AddListener("ChoiceMade", OnChoice);    
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RequestNextLeaf()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            dialogueText.gameObject.SetActive(true);
-            DisplayDialogueLeaf();
-        }
+        currentReader.GetNextLeaf();
     }
 
-    public void DisplayDialogueLeaf()
+    public void StartDialogueSession()
     {
-        GetChoices(currentLeaf);
+        dialogueGroup.SetActive(true);
 
+        DisplayDialogueLeaf();
+    }
+
+    public void EndDialogueSession()
+    {
+        dialogueGroup.SetActive(false);
+    }
+
+    private void DisplayDialogueLeaf()
+    {
+        ClearButtons();
+
+        if(currentLeaf.choices.Count > 0)
+        {
+            GetChoices(currentLeaf);
+            nextButton.SetActive(false);
+        }
+        else
+        {
+            nextButton.SetActive(true);
+        }
+        
         dialogueText.text = currentLeaf.text;
     }
 
-    public void OnChoice(int choiceBranchIndex)
+    private void OnChoice(int choiceBranchIndex)
     {
         RequestTraverse(choiceBranchIndex);
     }
@@ -45,9 +67,21 @@ public class DialogueUIManager : MonoBehaviour
     {
         foreach(var choice in leaf.choices)
         {
-            Debug.Log(choice.text);
+            GameObject button = Instantiate(choiceButton, Vector3.zero, Quaternion.identity);
+            button.transform.SetParent(buttonGroup);
+            button.transform.GetChild(0).GetComponent<TMP_Text>().text = choice.text;
 
-            currentLeafCoices.Add(choice);
+            button.GetComponent<ButtonChoiceBroadcaster>().choiceBranchIndex = choice.branchID;
+
+            buttons.Add(button);
+        }
+    }
+
+    private void ClearButtons()
+    {
+        foreach(var button in buttons)
+        {
+            Destroy(button);
         }
     }
 
