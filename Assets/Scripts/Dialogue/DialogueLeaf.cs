@@ -6,13 +6,13 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueLeaf : IDialogueNode
 {
-    enum EndAction : ushort
+    public enum EndAction : ushort
     {
         NextNode = 0,
         Choice = 1,
         End = 2
     }
-    [SerializeField] private EndAction endAction = EndAction.NextNode;
+    [SerializeField] public EndAction endAction = EndAction.NextNode;
 
     [TextArea(3, 4)] public string text;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueTree : MonoBehaviour
 {
-    [SerializeField] private List<DialogueBranch> branches = new List<DialogueBranch>();
+    public List<DialogueBranch> branches = new List<DialogueBranch>();
 
     public DialogueBranch currentBranch {get; set;}
 
