@@ -259,7 +259,7 @@ PrefabInstance:
     - target: {fileID: 5145226880548104435, guid: fa2f528bb76824a26b960bf3c52e26b5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5145226880548104436, guid: fa2f528bb76824a26b960bf3c52e26b5,
         type: 3}
@@ -315,6 +315,111 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[6].leaves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[7].leaves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[6].leaves.Array.data[0].text
+      value: Pfft, yeah it is...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[7].leaves.Array.data[0].text
+      value: Good, now change it!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[6].leaves.Array.data[0].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[0].text
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[1].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[2].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[3].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[4].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[5].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[6].leaves.Array.data[0].choices.Array.data[0].text
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[6].leaves.Array.data[0].choices.Array.data[1].text
+      value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[0].branchID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[1].branchID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[2].branchID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[3].branchID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[4].branchID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.data[5].branchID
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2f528bb76824a26b960bf3c52e26b5, type: 3}
@@ -506,7 +611,7 @@ PrefabInstance:
     - target: {fileID: 6645879901104526873, guid: 92e8a6c3c3bfc4910b90c29ebfe439fa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7319840630912603868, guid: 92e8a6c3c3bfc4910b90c29ebfe439fa,
         type: 3}
