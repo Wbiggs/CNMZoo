@@ -6,7 +6,7 @@ public class OrbitCamera : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] private float rotSpeed = 1.5f;
-    [SerializeField] private float zoomSpeed;
+    [SerializeField] private float zoomSpeed = 0.05f;
 
     // [SerializeField] private float minDistance;
     // [SerializeField] private float maxDistance;
