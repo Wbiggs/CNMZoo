@@ -332,6 +332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
         type: 3}
+      propertyPath: branches.Array.data[0].leaves.Array.data[0].clips.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
       propertyPath: branches.Array.data[5].leaves.Array.data[0].choices.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -339,6 +344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: branches.Array.data[6].leaves.Array.data[0].choices.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[0].leaves.Array.data[0].animations.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
         type: 3}
@@ -379,6 +389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: branches.Array.data[6].leaves.Array.data[0].choices.Array.data[1].text
       value: I Guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
+        type: 3}
+      propertyPath: branches.Array.data[0].leaves.Array.data[0].animations.Array.data[0].type
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5145226881135059587, guid: fa2f528bb76824a26b960bf3c52e26b5,
         type: 3}
