@@ -324,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 4478018078625772111}
   rotSpeed: 1.5
+  zoomSpeed: 0.05
 --- !u!1 &4156722171507509404
 GameObject:
   m_ObjectHideFlags: 0
