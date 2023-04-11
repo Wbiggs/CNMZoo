@@ -1,0 +1,10 @@
+FileName: "Patchy-medow-1-unity.zip"
+Source: "https://freepbr.com/materials/patchy-meadow/"
+Rights: "https://freepbr.com/about-free-pbr/"
+Summary of digital rights at time of acquisition of asset:
+"Are these PBR texture sets really free? Can I use these PBR textures for free in my games and 3d designs?
+
+Yes. These PBR texture map sets are free to use in your games / 3d with no cost involved. It’s all free. I only ask that you don’t redistribute these PBR file sets on other sites, file sharing sites, email, and so on. Let’s keep the source files on freepbr.com only folks.
+
+What about using these commercially? 
+I’ve started asking for a  really small fee of $10 which allows you to use any and all of the PBR textures on the site commercially. You also get VIP access which allows you to download all of the textures on this site at once and some exclusive goodies. Check it all out here."
