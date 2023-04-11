@@ -18,6 +18,8 @@ public class DialogueLeaf : IDialogueNode
 
     public List<DialogueChoice> choices = new List<DialogueChoice>();
     public List<DialogueEvent> events = new List<DialogueEvent>();
+    public List<DialogueAudio> clips = new List<DialogueAudio>();
+    public List<DialogueAnimation> animations = new List<DialogueAnimation>();
 
     public string Execute()
     {
