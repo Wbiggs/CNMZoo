@@ -31,6 +31,24 @@ public class DialogueReader : MonoBehaviour
         GetNextLeaf();
     }
 
+    //The function used to trigger any animations inside of the leaf
+    private void TriggerLeafAnimation(DialogueLeaf leaf)
+    {
+        foreach (var leafAnimation in leaf.animations)
+        {
+            leafAnimation.Trigger();
+        }
+    }
+
+    //The function used to trigger any audio inside of the leaf
+    private void TriggerLeafAudio(DialogueLeaf leaf)
+    {
+        foreach (var leafAudio in leaf.clips)
+        {
+            leafAudio.Trigger();
+        }
+    }
+
     //The function used to trigger any events inside of the leaf
     private void TriggerLeafEvents(DialogueLeaf leaf)
     {
@@ -62,6 +80,18 @@ public class DialogueReader : MonoBehaviour
         if(currentLeaf.events.Count > 0)
         {
             TriggerLeafEvents(currentLeaf);
+        }
+
+        //Trigger various audio if the current leaf has one.
+        if(currentLeaf.clips.Count > 0)
+        {
+            TriggerLeafAudio(currentLeaf);
+        }
+
+        //Trigger various animations if the current leaf has one.
+        if(currentLeaf.animations.Count > 0)
+        {
+            TriggerLeafAnimation(currentLeaf);
         }
     }
 }

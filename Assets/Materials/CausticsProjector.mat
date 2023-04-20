@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CausticsProjector
+  m_Shader: {fileID: 4800000, guid: 42aabdb0273e24801b406516be101486, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Caustics:
+        m_Texture: {fileID: 2800000, guid: 7e7f43eba5cea44e4bfe86aab26a7db8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 19b2343f70fdd45fab4ac2c30b2a54d7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalWaves:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmallWaves:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Bump: 1
+    - _CausticsFadeRadius: 0.39
+    - _CausticsFadeStrength: 0.67
+    - _CausticsLuminanceMaskStrength: 0.6
+    - _Intensity: 7.21
+    - _RGBSplit: 0.5
+    - _Refraction: 0.5
+    - _SeaDepth: 0.5
+    - _Smoothness: 0.136
+    - _Speed: 0.02
+    - _Tiling: 2.8
+    - _WavesHeight: 2
+    m_Colors:
+    - _BumpSpeed: {r: 0.1, g: 0.1, b: -0.05, a: -0.05}
+    - _DeepColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 1, g: 0, b: 0, a: 1}
+    - _ShallowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularTint: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
